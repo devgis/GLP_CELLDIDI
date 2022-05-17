@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bddd.Common", "Bddd.Common\Bddd.Common.csproj", "{5C0022D0-94D3-48B6-B2F9-63D7B6F92B7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bddd", "Bddd\Bddd.csproj", "{75A2834B-6182-4DBB-A5A5-A7CFD2D3EF69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C0022D0-94D3-48B6-B2F9-63D7B6F92B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0022D0-94D3-48B6-B2F9-63D7B6F92B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0022D0-94D3-48B6-B2F9-63D7B6F92B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0022D0-94D3-48B6-B2F9-63D7B6F92B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75A2834B-6182-4DBB-A5A5-A7CFD2D3EF69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A2834B-6182-4DBB-A5A5-A7CFD2D3EF69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A2834B-6182-4DBB-A5A5-A7CFD2D3EF69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A2834B-6182-4DBB-A5A5-A7CFD2D3EF69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

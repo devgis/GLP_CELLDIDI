@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="天地图"/>
+    <title>天地图－地图API－范例－信息窗口</title>
+    <script type="text/javascript" src="http://api.tianditu.com/api?v=4.0"></script>
+    <style type="text/css">body,html{width:100%;height:100%;margin:0;font-family:"Microsoft YaHei"}#mapDiv{width:100%;height:400px}input,b,p{margin-left:5px;font-size:14px}</style>
+    <script>
+        var map;
+        var zoom = 12;
+        var center;
+        var localsearch;
+        var radius = 5000;
+        var infoWin;
+        function onLoad() {
+            center = new T.LngLat(116.63072, 40.054952);
+            //初始化地图对象
+            map = new T.Map("mapDiv");
+            //设置显示地图的中心点和级别
+            map.centerAndZoom(center, zoom);
+            //创建信息窗口对象
+
+            marker = new T.Marker(center); // 创建标注
+            map.addOverLay(marker);
+            var infoWin1 = new T.InfoWindow();
+            var sContent =
+                "<div style='margin:0px;'>" +
+                "<div style='margin:10px 10px; '>" +
+                "<img style='float:left;margin:0px 10px' src='http://lbs.tianditu.com/images/logo.png' width='101' height='49' title='天安门'/>" +
+                "<div style='margin:10px 0px 10px 120px;'>电话 : (010)88187700 <br>地址：北京市顺义区机场东路国门商务区地理信息产业园2号楼天地图大厦" +
+                "</div>" +
+                "<input  id='keyWord' value='机场' type='text' style='border: 1px solid #cccccc;width: 180px;height: 20px;line-height: 20px;padding-left: 10px;display: block;float: left;'>" +
+                "<input style='margin-left:195px;  width: 80px;height: 24px; text-align: center; background: #5596de;color: #FFF;border: none;display: block;cursor: pointer;' type='button' value='周边搜索'  onClick=\"localsearch.searchNearby(document.getElementById('keyWord').value,center,radius)\">" +
+                "</div>" +
+                "</div>";
+            infoWin1.setContent(sContent);
+            marker.addEventListener("click", function () {
+                marker.openInfoWindow(infoWin1);
+            }); // 将标注添加到地图中
+            var config = {
+                pageCapacity: 10, //每页显示的数量
+                onSearchComplete: localSearchResult	//接收数据的回调函数
+            };
+            //创建搜索对象
+            localsearch = new T.LocalSearch(map, config);
+        }
+
+        function localSearchResult(result) {
+            //清空地图及搜索列表
+            clearAll();
+            //创建圆
+            createCircle();
+            //解析点数据结果
+            pois(result.getPois());
+        }
+
+        //解析点数据结果
+        function pois(obj) {
+            if (obj) {
+                //坐标数组，设置最佳比例尺时会用到
+                var zoomArr = [];
+                for (var i = 0; i < obj.length; i++) {
+                    //闭包
+                    (function (i) {
+                        //名称
+                        var name = obj[i].name;
+                        //地址
+                        var address = obj[i].address;
+                        //坐标
+                        var lnglatArr = obj[i].lonlat.split(" ");
+                        var lnglat = new T.LngLat(lnglatArr[0], lnglatArr[1]);
+
+                        var winHtml = "地址:" + address;
+
+                        //创建标注对象
+                        var marker = new T.Marker(lnglat);
+                        //地图上添加标注点
+                        map.addOverLay(marker);
+                        //注册标注点的点击事件
+                        marker.addEventListener("click", function () {
+                            this.showPosition(marker, name, winHtml);
+
+                        }, this)
+                        zoomArr.push(lnglat);
+
+                        //在页面上显示搜索的列表
+                        var a = document.createElement("a");
+                        a.href = "javascript://";
+                        a.innerHTML = name;
+                        a.onclick = function () {
+                            showPosition(marker, name, winHtml);
+                        }
+
+                    })(i);
+                }
+            }
+        }
+        //圆形
+        function createCircle() {
+            var config = {
+                color: "blue", //折线颜色
+                fillColor: "#fff",    //填充颜色。当参数为空时，折线覆盖物将没有填充效果
+                weight: "3", //折线的宽度，以像素为单位
+                opacity: 0.5,    //折线的透明度，取值范围0 - 1
+                fillOpacity: 0.4,
+                lineStyle: "solid" //折线的样式，solid或dashed
+            };
+            //定义该矩形的显示区域
+            var circle = new T.Circle(center, radius, config);
+            map.addOverLay(circle);
+        }
+        //显示信息框
+        function showPosition(marker, name, winHtml) {
+            if (infoWin) {
+                map.removeOverLay(infoWin);
+                infoWin = null;
+            }
+            var html = "<h3>" + name + "</h3>";
+            html += winHtml;
+            infoWin = new T.InfoWindow(html);
+            marker.openInfoWindow(infoWin);
+        }
+
+        //清空地图及搜索列表
+        function clearAll() {
+            map.clearOverLays();
+        }
+    </script>
+</head>
+<body onLoad="onLoad()">
+<div id="mapDiv" ></div>
+<p>本示例演示如何在地图上显示一个信息浮窗。</p>
+<div id="resultDiv"></div>
+</body>
+</html>

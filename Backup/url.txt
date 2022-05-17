@@ -1,0 +1,4 @@
+//处理后的结果
+http://localhost:5145/data.ashx?xcout=10&ycout=10&startx=104.1291&endx=104.0432&starty=30.7279&endy=30.655&t=rs 
+//数据
+http://localhost:5145/data.ashx?t=data

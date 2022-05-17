@@ -1,0 +1,10 @@
+1 vs2010打开Bddd.sln
+2 附加SQLDB/DIDI.mdf 到sql server 2008 rs
+3 修改Bddd/web.config中<add key="SQLServer" value="pooling=true;server=192.168.2.20;database=DIDI;user id=sa;password=123456;min pool size = 10;max pool size=50;"/>
+
+server=你的Ip地址
+user id= sa账户
+password =你的sa密码
+
+
+4然后f5运行网站 /index.html

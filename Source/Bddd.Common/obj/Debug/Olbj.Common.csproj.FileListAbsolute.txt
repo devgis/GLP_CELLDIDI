@@ -1,0 +1,5 @@
+D:\Work\2018\olBj\olbj\Olbj.Common\bin\Debug\Olbj.Common.dll
+D:\Work\2018\olBj\olbj\Olbj.Common\bin\Debug\Olbj.Common.pdb
+D:\Work\2018\olBj\olbj\Olbj.Common\obj\Debug\Olbj.Common.dll
+D:\Work\2018\olBj\olbj\Olbj.Common\obj\Debug\Olbj.Common.pdb
+D:\Work\2018\olBj\olbj\Olbj.Common\obj\Debug\Olbj.Common.csprojResolveAssemblyReference.cache

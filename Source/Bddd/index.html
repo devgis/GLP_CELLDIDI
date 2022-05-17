@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>地图首页</title>
+    <script src=" http://api.tianditu.com/api?v=4.0" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>    <script type="text/javascript"  src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=V0xaf7llG6bH3NuODNPCTyu1UfpLh9GY"></script>
+    <script type="text/javascript"  src="js/cfg.js"></script>
+</head>
+<body>
+<div id="mapDiv">
+</div>
+<div id="toolbutton">
+<input type="button" onclick="showOrder();" value="订单数据">
+<input type="button" onclick="showDataInMap();" value="地图显示订单">
+<input type="button" onclick="showZoneOrder();" value="上下车区间">
+<label>开始小时</label>
+<select id="starthour">
+</select>
+<label>结束小时</label>
+<select id="endhour">
+</select>
+<input type="button" onclick="showQueyByHour();" value="时间段查询">
+<input type="button" onclick="showQueyByHourChart();" value="时间段查询图">
+<label>开始小区</label>
+<select id="startzoneid">
+</select>
+<label>结束小区</label>
+<select id="endzoneid">
+</select>
+<input type="button" onclick="showQueyByZoneid();" value="小区间查询">
+<input type="button" onclick="showQueyByZoneidChart();" value="小区间查询图">
+<label>小区</label>
+<select id="onezoneid">
+</select>
+<input type="button" onclick="showQueyByOneZoneid();" value="小区上下车分析">
+<input type="button" onclick="showQueyByOneZoneidChart();" value="小区上下车分析图">
+</div>
+<p></p>
+</body>
+<script type="text/javascript"  src="js/bd.js"></script>
+</html>

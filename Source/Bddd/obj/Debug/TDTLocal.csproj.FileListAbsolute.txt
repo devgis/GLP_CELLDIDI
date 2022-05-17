@@ -1,0 +1,17 @@
+E:\Temp\TDTLocal\ShipsTracks\ShipsTracks\bin\TDTLocal.dll
+E:\Temp\TDTLocal\ShipsTracks\ShipsTracks\bin\TDTLocal.pdb
+E:\Temp\TDTLocal\ShipsTracks\ShipsTracks\bin\Newtonsoft.Json.dll
+E:\Temp\TDTLocal\ShipsTracks\ShipsTracks\obj\Debug\TDTLocal.dll
+E:\Temp\TDTLocal\ShipsTracks\ShipsTracks\obj\Debug\TDTLocal.pdb
+E:\Temp\TDTLocal\ShipsTracks\TDTLocal\bin\TDTLocal.dll
+E:\Temp\TDTLocal\ShipsTracks\TDTLocal\bin\TDTLocal.pdb
+E:\Temp\TDTLocal\ShipsTracks\TDTLocal\bin\Newtonsoft.Json.dll
+E:\Temp\TDTLocal\ShipsTracks\TDTLocal\obj\Debug\TDTLocal.csprojResolveAssemblyReference.cache
+E:\Temp\TDTLocal\ShipsTracks\TDTLocal\obj\Debug\TDTLocal.dll
+E:\Temp\TDTLocal\ShipsTracks\TDTLocal\obj\Debug\TDTLocal.pdb
+E:\Temp\TDTLocal\TDTLocal\TDTLocal\bin\TDTLocal.dll
+E:\Temp\TDTLocal\TDTLocal\TDTLocal\bin\TDTLocal.pdb
+E:\Temp\TDTLocal\TDTLocal\TDTLocal\bin\Newtonsoft.Json.dll
+E:\Temp\TDTLocal\TDTLocal\TDTLocal\obj\Debug\TDTLocal.csprojResolveAssemblyReference.cache
+E:\Temp\TDTLocal\TDTLocal\TDTLocal\obj\Debug\TDTLocal.dll
+E:\Temp\TDTLocal\TDTLocal\TDTLocal\obj\Debug\TDTLocal.pdb

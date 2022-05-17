@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75A2834B-6182-4DBB-A5A5-A7CFD2D3EF69}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bddd</RootNamespace>
+    <AssemblyName>Bddd</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\ol.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\副本 index.css" />
+    <Content Include="data.html" />
+    <Content Include="img\11.png" />
+    <Content Include="img\arrow.png" />
+    <Content Include="img\noimg.png" />
+    <Content Include="img\73-radar.png" />
+    <Content Include="img\bs.png" />
+    <Content Include="img\ship.png" />
+    <Content Include="index.html" />
+    <Content Include="jsgrid-1.5.3\i18n\jsgrid-de.js" />
+    <Content Include="jsgrid-1.5.3\i18n\jsgrid-es.js" />
+    <Content Include="jsgrid-1.5.3\i18n\jsgrid-fr.js" />
+    <Content Include="jsgrid-1.5.3\i18n\jsgrid-he.js" />
+    <Content Include="jsgrid-1.5.3\i18n\jsgrid-ja.js" />
+    <Content Include="jsgrid-1.5.3\i18n\jsgrid-ka.js" />
+    <Content Include="jsgrid-1.5.3\i18n\jsgrid-pl.js" />
+    <Content Include="jsgrid-1.5.3\i18n\jsgrid-pt-br.js" />
+    <Content Include="jsgrid-1.5.3\i18n\jsgrid-pt.js" />
+    <Content Include="jsgrid-1.5.3\i18n\jsgrid-ru.js" />
+    <Content Include="jsgrid-1.5.3\i18n\jsgrid-tr.js" />
+    <Content Include="jsgrid-1.5.3\i18n\jsgrid-zh-cn.js" />
+    <Content Include="jsgrid-1.5.3\i18n\jsgrid-zh-tw.js" />
+    <Content Include="jsgrid-1.5.3\jsgrid-theme.css" />
+    <Content Include="jsgrid-1.5.3\jsgrid-theme.min.css" />
+    <Content Include="jsgrid-1.5.3\jsgrid.css" />
+    <Content Include="jsgrid-1.5.3\jsgrid.js" />
+    <Content Include="jsgrid-1.5.3\jsgrid.min.css" />
+    <Content Include="jsgrid-1.5.3\jsgrid.min.js" />
+    <Content Include="js\bd.js" />
+    <Content Include="js\dt.js" />
+    <Content Include="js\echarts.common.min.js" />
+    <Content Include="js\echarts.min.js" />
+    <Content Include="js\jquery-3.3.1.min.js" />
+    <Content Include="js\layer.js" />
+    <Content Include="js\mobile\layer.js" />
+    <Content Include="js\mobile\need\layer.css" />
+    <Content Include="js\theme\default\icon-ext.png" />
+    <Content Include="js\theme\default\icon.png" />
+    <Content Include="js\theme\default\layer.css" />
+    <Content Include="js\theme\default\loading-0.gif" />
+    <Content Include="js\theme\default\loading-1.gif" />
+    <Content Include="js\theme\default\loading-2.gif" />
+    <Content Include="js\dt_rs.js" />
+    <Content Include="js\cfg.js" />
+    <Content Include="js\dt_zone.js" />
+    <Content Include="js\dt_hour.js" />
+    <Content Include="js\dt_hour_chart.js" />
+    <Content Include="js\dt_zone_chart.js" />
+    <Content Include="js\副本 dt_hour_chart.js" />
+    <Content Include="js\dt_onezone.js" />
+    <Content Include="js\dt_onezone_chart.js" />
+    <Content Include="pt.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="data_rs.html" />
+    <Content Include="data_zone.html" />
+    <Content Include="data_hour.html" />
+    <Content Include="data_hour_chart.html" />
+    <Content Include="data_zone_chart.html" />
+    <Content Include="data_onezone.html" />
+    <Content Include="data_onezone_chart.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="data.ashx.cs">
+      <DependentUpon>data.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bddd.Common\Bddd.Common.csproj">
+      <Project>{5C0022D0-94D3-48B6-B2F9-63D7B6F92B7D}</Project>
+      <Name>Olbj.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5145</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

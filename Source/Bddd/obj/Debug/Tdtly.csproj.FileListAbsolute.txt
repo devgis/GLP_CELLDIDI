@@ -1,0 +1,16 @@
+D:\BaiduNetdiskDownload\tdtly\tdtly\Tdtly\obj\Debug\Tdtly.csprojResolveAssemblyReference.cache
+D:\BaiduNetdiskDownload\tdtly\tdtly\Tdtly\bin\Tdtly.dll
+D:\BaiduNetdiskDownload\tdtly\tdtly\Tdtly\bin\Tdtly.pdb
+D:\BaiduNetdiskDownload\tdtly\tdtly\Tdtly\bin\Newtonsoft.Json.dll
+D:\BaiduNetdiskDownload\tdtly\tdtly\Tdtly\bin\Tdtly.Common.dll
+D:\BaiduNetdiskDownload\tdtly\tdtly\Tdtly\bin\Tdtly.Common.pdb
+D:\BaiduNetdiskDownload\tdtly\tdtly\Tdtly\obj\Debug\Tdtly.dll
+D:\BaiduNetdiskDownload\tdtly\tdtly\Tdtly\obj\Debug\Tdtly.pdb
+D:\Work\2018\tdtly09\tdtly\Tdtly\bin\Tdtly.dll
+D:\Work\2018\tdtly09\tdtly\Tdtly\bin\Tdtly.pdb
+D:\Work\2018\tdtly09\tdtly\Tdtly\bin\Newtonsoft.Json.dll
+D:\Work\2018\tdtly09\tdtly\Tdtly\bin\Tdtly.Common.dll
+D:\Work\2018\tdtly09\tdtly\Tdtly\bin\Tdtly.Common.pdb
+D:\Work\2018\tdtly09\tdtly\Tdtly\obj\Debug\Tdtly.csprojResolveAssemblyReference.cache
+D:\Work\2018\tdtly09\tdtly\Tdtly\obj\Debug\Tdtly.dll
+D:\Work\2018\tdtly09\tdtly\Tdtly\obj\Debug\Tdtly.pdb

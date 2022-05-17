@@ -1,0 +1,8 @@
+D:\Work\2018\olBj\olbj\Olbj\obj\Debug\Olbj.csprojResolveAssemblyReference.cache
+D:\Work\2018\olBj\olbj\Olbj\bin\Olbj.dll
+D:\Work\2018\olBj\olbj\Olbj\bin\Olbj.pdb
+D:\Work\2018\olBj\olbj\Olbj\bin\Newtonsoft.Json.dll
+D:\Work\2018\olBj\olbj\Olbj\bin\Olbj.Common.dll
+D:\Work\2018\olBj\olbj\Olbj\bin\Olbj.Common.pdb
+D:\Work\2018\olBj\olbj\Olbj\obj\Debug\Olbj.dll
+D:\Work\2018\olBj\olbj\Olbj\obj\Debug\Olbj.pdb
